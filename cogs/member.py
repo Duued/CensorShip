@@ -39,6 +39,23 @@ class Member(commands.Cog):
         await ctx.send(f"If you can't see the embed message below, please give me `embed_links` and try again!")
         await ctx.send(embed=embed)
         
-        
+    @commands.command()
+    @commands.cooldown(1, 180, commands.BucketType.user)
+    async def feedback(self, ctx,* , message):
+        embed = discord.Embed(title="Feedback", description=f"{ctx.author} (`{ctx.author.id}`) sent feedback! Their feedback is **{message}**", color=0x00ff00)
+        embed2 = discord.Embed(title="Feedback Sent!", description=f"Your feedback has been launched!", color=0x00ff00)
+        feedback = ctx.bot.get_channel(channelid)
+        await ctx.send(embed=embed2)
+        await feedback.send(embed=embed)
+
+    @commands.command()
+    @commands.cooldown(1, 180, commands.BucketType.user)
+    async def suggest(self, ctx,* , suggestion):
+        embed = discord.Embed(title="Suggestion", description=f"{ctx.author} (`{ctx.author.id}`) sent a suggestion, their suggestion is **{suggestion}**", color=0x00ff00)
+        embed2 = discord.Embed(title="Feedback Sent!", description=f"Your suggestion has been launched!", color=0x00ff00)
+        suggestions = ctx.bot.get_channel(channelid)
+        await ctx.send(embed=embed2)
+        await ctx.send(embed=embed)
+
 def setup(bot):
     bot.add_cog(Member(bot))
