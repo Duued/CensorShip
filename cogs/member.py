@@ -57,5 +57,12 @@ class Member(commands.Cog):
         await ctx.send(embed=embed2)
         await suggestion.send(embed=embed)
 
+    @commands.command(name="git")
+    @commands.cooldown(1, 25, commands.BucketType.user)
+    async def github(self, ctx):
+        """Get the link to this github repository!"""
+        embed = discord.Embed(title="My GitHub!", description="https://github.com/Duued/CensorShip", color=0x00ff00)
+        await ctx.send(embed=embed)
+
 def setup(bot):
     bot.add_cog(Member(bot))
