@@ -55,7 +55,7 @@ class Member(commands.Cog):
         embed2 = discord.Embed(title="Feedback Sent!", description=f"Your suggestion has been launched!", color=0x00ff00)
         suggestions = ctx.bot.get_channel(channelid)
         await ctx.send(embed=embed2)
-        await ctx.send(embed=embed)
+        await suggestion.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(Member(bot))
