@@ -35,7 +35,7 @@ class Member(commands.Cog):
     @commands.cooldown(1, 5, commands.BucketType.user)
     async def required_permissions(self, ctx):
         """View the permissions that the bot needs to function correctly!"""
-        embed = discord.Embed(title="Bot's Required Permissions", description="Permissions needed: `kick_members`, `ban_members`, `embed_links`, `attach_files`, `create_instant_invite`, `view_audit_logs`, and `manage_messages`", color=0xeeff00)
+        embed = discord.Embed(title="Bot's Required Permissions", description="Permissions needed: `kick_members`, `ban_members`, `embed_links`, `attach_files`, `create_instant_invite`, `view_audit_logs`, and `manage_messages`. `Administrator` isn't required but unlocks more functionality", color=0xeeff00)
         await ctx.send(f"If you can't see the embed message below, please give me `embed_links` and try again!")
         await ctx.send(embed=embed)
         
