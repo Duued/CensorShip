@@ -6,8 +6,9 @@ CensorShip is a discord bot, that will auto ban users when they say specific wor
 
 To see the bot, go to https://discord.gg/CyDDBpf 
 Run `c!invite` to invite it to your server
-https://discord.com/oauth2/authorize?client_id=739125103505309747&permissions=126159&redirect_uri=https%3A%2F%2Fdiscord.gg%2FCyDDBpf&response_type=code&scope=bot%20identify
-^ Direct invite
+
+Direct bot invite link: https://discord.com/oauth2/authorize?client_id=739125103505309747&permissions=126159&redirect_uri=https%3A%2F%2Fdiscord.gg%2FCyDDBpf&response_type=code&scope=bot%20identify
+
 
 Run `c!required_permissions` (`c!perms` is an alias)
 
