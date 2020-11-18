@@ -63,6 +63,18 @@ class Member(commands.Cog):
         """Get the link to this github repository!"""
         embed = discord.Embed(title="My GitHub!", description="https://github.com/Duued/CensorShip", color=0x00ff00)
         await ctx.send(embed=embed)
+        
+    #@commands.command()
+    #@commands.cooldown(1, 2, commands.BucketType.user)
+    #async def lyrics(self, ctx, *, songname):
+        #async with aiohttp.ClientSession() as session:
+            #token = "C7OkacZ08cNUBeyYMS5kEngRgLJGf92k" # Put token here
+            #async with session.get(f'https://api.ksoft.si/lyrics/search?q={songname}&limit=1', headers={'Authorization': f'{token}') as response:
+                #response = await response.text()
+            #embed = discord.Embed(title="Song Lyrics", color=0x728da)
+            #embed.add_field(name="Lyrics", value=f"{response}", inline=False)            
+            #embed.set_footer(text="Lyrics Provided by Ksoft.Si API")
+            #await ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(Member(bot))
