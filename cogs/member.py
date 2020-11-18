@@ -68,7 +68,7 @@ class Member(commands.Cog):
     #@commands.cooldown(1, 2, commands.BucketType.user)
     #async def lyrics(self, ctx, *, songname):
         #async with aiohttp.ClientSession() as session:
-            #token = "C7OkacZ08cNUBeyYMS5kEngRgLJGf92k" # Put token here
+            #token = "" # Put token here
             #async with session.get(f'https://api.ksoft.si/lyrics/search?q={songname}&limit=1', headers={'Authorization': f'{token}') as response:
                 #response = await response.text()
             #embed = discord.Embed(title="Song Lyrics", color=0x728da)
